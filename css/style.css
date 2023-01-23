@@ -234,10 +234,7 @@ ul,ol {
   text-align: center;
   border: 1px solid transparent;
   cursor: pointer;
-  transition-property:  background-color box-shadow;
-  transition-duration:  250ms;
-  transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -416,9 +413,7 @@ ul,ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property:  background-color;
-  transition-duration:  250ms;
-  transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-soc-link:hover,
 .icons-soc-link:focus {
@@ -456,15 +451,11 @@ ul,ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: border;
-  transition-duration:  250ms;
-  transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icons {
   fill: #8e8f99;
-  transition-property: fill;
-  transition-duration:  250ms;
-  transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -535,9 +526,7 @@ ul,ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property:  background-color;
-  transition-duration:  250ms;
-  transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .social-link:hover,
@@ -588,11 +577,7 @@ ul,ol {
   border: 1px solid #E7E9FC;
   border-radius: 4px;
   padding: 12px 24px;
-  transition-property:  background-color color box-shadow border-color;
-  transition-duration:  250ms;
-  transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
-
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-item:hover,
@@ -636,9 +621,7 @@ ul,ol {
 .text-decor{
   text-decoration: none;
   display: block;
-  transition-property: box-shadow;
-  transition-duration:  250ms;
-  transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-decor:focus,
 .text-decor:hover {
@@ -665,22 +648,16 @@ ul,ol {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(63, 145, 238, 0.692);
+  background-color: rgb(63, 145, 238);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px 32px;
 }
 .overlay-text {
-  display: flex;
-  width: 296px;
-  height: 96px;
   color: var(--button-h1);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .portfolio-item:hover .overlay {
   transform: translateY(0%);
@@ -691,7 +668,8 @@ ul,ol {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(19, 14, 14, 0.712);
+  opacity: 1;
+  background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
@@ -711,8 +689,8 @@ ul,ol {
 }
 .modal-close {
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   display: flex;
